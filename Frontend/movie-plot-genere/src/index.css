@@ -1,0 +1,105 @@
+/* Keyframes for animated gradient background */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+body{
+  background: linear-gradient(-45deg, #f3f4f6, #e0e7ff, #ffe4e6, #fef9c3);
+  background-size: 200% 200%;
+  animation: gradientAnimation 15s ease infinite;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* Movie title */
+h1 {
+  font-size: 28px;
+  color: #2c3e50;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Textarea styling */
+textarea {
+  width: 80%; /* Make it responsive */
+  min-height: 120px; /* Comfortable height */
+  padding: 12px; /* Spacing inside the box */
+  border: 2px solid #a8a8a8; /* Soft border */
+  border-radius: 12px; /* Rounded corners */
+  font-size: 16px; /* Readable text */
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  resize: none; /* Prevent unnecessary resizing */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  background: #f8f8fc; /* Light background */
+}
+
+
+
+
+textarea:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.3);
+}
+
+/* Button styling */
+button {
+  margin: 15px;
+  padding: 18px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  background: #6366f1;
+  color: #fff;
+  cursor: pointer;
+  gap: 16px;
+  
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(99, 102, 241, 0.3);
+}
+
+button:hover {
+  background: #4f46e5;
+  box-shadow: 0 6px 15px rgba(79, 70, 229, 0.4);
+}
+
+/* Generated story section */
+.generated-story {
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  font-size: 16px;
+  color: #444;
+  line-height: 1.5;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  textarea {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
