@@ -46,9 +46,10 @@ const GeneratedPlot = ({ plot }) => {
   };
 
   return (
-    <div className="mt-4 p-6 bg-gray-800 rounded-lg w-full max-w-md text-center shadow-lg">
-      <h2 className="text-lg font-bold text-white">Generated Story:</h2>
-      <p className="text-gray-300 mt-3 font-mono min-h-[80px]">{displayText}</p>
+    <div className="w-full max-w-lg text-center mt-4 p-6 rounded-lg shadow-lg">
+
+      <h2 className="text-lg font-bold text-black">Generated Story:</h2>
+      <p className="text-black mt-3 font-mono min-h-[80px]">{displayText}</p>
 
       {/* ✅ Fix spacing between buttons */}
       <div className="mt-4 flex flex-wrap justify-center gap-4">
@@ -75,6 +76,8 @@ const GeneratedPlot = ({ plot }) => {
       </div>
     </div>
   );
+  
+
 };
 
 export default GeneratedPlot;
