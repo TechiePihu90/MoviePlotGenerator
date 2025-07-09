@@ -10,11 +10,7 @@ dotenv.config(); // Load environment variables
 
 const app = express();
 app.use(express.json());
-app.use(cors({
-  origin: "https://movieplot-generator.netlify.app",
-  methods: ["GET", "POST"],
-  credentials: true,
-}));
+app.use(cors());
 
 // Handle OPTIONS preflight
 app.options("*", cors());
