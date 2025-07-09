@@ -10,7 +10,14 @@ dotenv.config(); // Load environment variables
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: "https://movieplot-generator.netlify.app",
+  methods: ["GET", "POST"],
+  credentials: true,
+}));
+
+// Handle OPTIONS preflight
+app.options("*", cors());
 
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
