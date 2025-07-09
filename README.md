@@ -6,7 +6,7 @@ A fun and creative web app that generates unique movie plots using **Google Gemi
 
 ## 🔗 Live Demo
 
-👉 [Check it out here!](https://your-netlify-link.netlify.app](https://movieplot-generator.netlify.app/).
+👉 [Check it out here!](https://movieplot-generator.netlify.app/).
 
 ---
 
